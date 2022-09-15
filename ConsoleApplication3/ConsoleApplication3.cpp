@@ -4,23 +4,20 @@ using namespace std;
 
 int main() {
     vector <int> num;
-    num.insert(num.begin(),7);
-    num.insert(num.begin()+1,8);
-    num.insert(num.begin()+2,13);
-    num.insert(num.begin()+3,15);
-    num.insert(num.begin()+4,25);
+    num.push_back(7);
+    num.push_back(8);
+    num.push_back(13);
+    num.push_back(15);
+    num.push_back(25);
     int y = num.size();
-    int x= 0;
     for (int i = 1; i < y; i++) {
+        cout << "cuando es el valor de i: " << i << endl;
+        cout << "el valor de esa posicion es: " << num[i] << endl;
         if (i % 2 == 0) {
-            int x = num[i];
-            num.erase(num.begin() + i);
-            num.insert(num.begin(), x);  
+            num.insert(num.begin(), num[i]);
         }
         else {
-            int x = num[i];
-            num.erase(num.begin() + i);
-            num.push_back(x);
+            num.push_back(num[i]);
         }
     }
     for (int j = 0; j < y; j++) {
