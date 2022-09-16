@@ -3,12 +3,12 @@
 using namespace std;
 
 int main() {
-    vector <int> guild;
+	vector <int> guild;
 	for (size_t i = 1; i < 10; i++)
 	{
 		guild.push_back(i);
 	}
-	int indicefinal, indiceinicial,x;
+	int indicefinal, indiceinicial, x;
 	cout << "digite el indice inicial: ";
 	cin >> indiceinicial;
 	cout << "digite el indice final: ";
@@ -17,7 +17,7 @@ int main() {
 	for (int i = indiceinicial; i <= indicefinal; i++)
 	{
 		x = guild[i];
-		guild.insert(guild.begin() + indicefinal+1, x);
+		guild.insert(guild.begin() + indicefinal + 1, x);
 	}
 	for (size_t i = indiceinicial; i <= indicefinal; i++)
 	{
@@ -27,5 +27,5 @@ int main() {
 	{
 		cout << guild[i];
 	}
-    return 0;
+	return 0;
 }
