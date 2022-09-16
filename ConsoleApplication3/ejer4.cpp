@@ -10,7 +10,7 @@ int main() {
 
     for (int i = 0; i <= x; i++)
     {
-        if(i % 2 == 0) {
+        if (i % 2 == 0) {
             response.insert(response.begin(), i);
         }
         if (i % 2 != 0) {
@@ -23,4 +23,3 @@ int main() {
     }
     return 0;
 }
-
