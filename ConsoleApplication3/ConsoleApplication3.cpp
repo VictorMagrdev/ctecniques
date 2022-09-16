@@ -8,7 +8,7 @@ int main() {
     cout << "digite un numero: ";
     cin >> x;
 
-    for (int i = 0; i <= x; i++)
+    for (int i = 1; i <= x+1; i++)
     {
         if(i % 2 == 0) {
             response.insert(response.begin(), i);
